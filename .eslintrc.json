@@ -1,0 +1,136 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "env": {
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "plugins": [
+    "eslint-plugin-import-order-alphabetical",
+    "import",
+    "jsdoc",
+    "sort-destructure-keys"
+  ],
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:lodash/recommended",
+    "plugin:lodash-fp/recommended",
+    "plugin:node/recommended"
+  ],
+  "rules": {
+    "array-bracket-spacing": "error",
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "camelcase": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "comma-spacing": "error",
+    "import/group-exports": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always"
+      }
+    ],
+    "import-order-alphabetical/order": "error",
+    "indent": [
+      "error",
+      2
+    ],
+    "jsdoc/check-examples": "warn",
+    "jsdoc/check-param-names": "error",
+    "jsdoc/check-tag-names": "error",
+    "jsdoc/check-types": "warn",
+    "jsdoc/newline-after-description": "off",
+    "jsdoc/no-undefined-types": "warn",
+    "jsdoc/require-description": "warn",
+    "jsdoc/require-description-complete-sentence": "off",
+    "jsdoc/require-example": "off",
+    "jsdoc/require-hyphen-before-param-description": "error",
+    "jsdoc/require-param": "error",
+    "jsdoc/require-param-description": "off",
+    "jsdoc/require-param-name": "error",
+    "jsdoc/require-param-type": "warn",
+    "jsdoc/require-returns": "off",
+    "jsdoc/require-returns-check": "off",
+    "jsdoc/require-returns-description": "off",
+    "jsdoc/require-returns-type": "warn",
+    "jsdoc/valid-types": "warn",
+    "key-spacing": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "acc",
+          "e",
+          "ctx",
+          "req",
+          "request",
+          "res",
+          "response",
+          "$scope",
+          "server"
+        ]
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": true,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "sort-destructure-keys/sort-destructure-keys": [
+      "error",
+      {
+        "caseSensitive": false
+      }
+    ]
+  },
+  "settings": {
+    "jsdoc": {
+      "tagNamePreference": {
+        "property": "prop"
+      }
+    }
+  }
+}
